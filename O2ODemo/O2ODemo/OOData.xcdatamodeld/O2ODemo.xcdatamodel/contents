@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17E202" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="SysConfig" representedClassName="SysConfigMO" syncable="YES" codeGenerationType="class">
+        <attribute name="bannerVersion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mainHost" optional="YES" attributeType="URI" syncable="YES"/>
+    </entity>
+    <entity name="UserInfo" representedClassName="UserInfo" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" maxValueString="13" syncable="YES"/>
+        <attribute name="pwd" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SysConfig" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="UserInfo" positionX="-63" positionY="0" width="128" height="103"/>
+    </elements>
+</model>

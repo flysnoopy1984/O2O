@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "UserData.init(coder:):UserData.swift">
+      </ContextState>
+      <ContextState
+         contextName = "RegisterController.viewWillAppear(_:):RegisterController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainController.viewDidLoad():MainController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MainController.tableView(_:numberOfRowsInSection:):MainController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_TaskData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ControllerManager.toEditHeaderImage(_:_:):ControllerManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_EditHeaderImageController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OOBannerView.SetupPageControl():OOBannerView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "AppData.Shared().Banner.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OOBannerView.collectionView(_:cellForItemAt:):OOBannerView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.item">
+            </PersistentString>
+            <PersistentString
+               value = "_Data.Banner">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OOScrollView.SetupScrollView():OOScrollView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.frame">
+            </PersistentString>
+            <PersistentString
+               value = "self.contentSize">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PersonController.viewDidLoad():PersonController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_ImgProfileHeader?.layer.cornerRadius">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OOBannerView.scrollViewDidEndDragging(_:willDecelerate:):OOBannerView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_oldPosX">
+            </PersistentString>
+            <PersistentString
+               value = "scrollView.contentOffset.x">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OOBannerView.NextBanner():OOBannerView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_CurIndexPath?.item">
+            </PersistentString>
+            <PersistentString
+               value = "self._PagerControl?.currentPage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OOButton_OneLine.MarginBottom.didset:OOButton_OneLine.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_MarginBottom">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CoreDataHelper.GetSysConfigMO():CoreDataHelper.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "resultObj">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OOButton_SMSVerify.RemainSec.willset:OOButton_SMSVerify.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in AppData.SetBannerFromJson(list:):AppData.swift">
+      </ContextState>
+      <ContextState
+         contextName = "static UserData.SaveToUserDefault(name:phone:IsLogin:):UserData.swift">
+      </ContextState>
+      <ContextState
+         contextName = "OOBannerView.ReAdjustImage():OOBannerView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_CurIndexPath?.item">
+            </PersistentString>
+            <PersistentString
+               value = "_Data.GetCount() ">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UserData.encode(with:):UserData.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "modelData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in MainController.AnalyBanner():MainController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in WebCore.LoadDataFromWeb(url:afterEvent:):WebCore.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in UIImage.Upload(FileName:SuccessUpload:FailureUpload:):ImageExtension.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BannerData.SetBannerFromJson(list:):BannerData.swift">
+      </ContextState>
+      <ContextState
+         contextName = "BaseTextField.keyboardWillShow(_:):BaseTextField.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "UIScreen.main.bounds.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainController.viewDidAppear(_:):MainController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "RegisterController.backToLogin(segue:):RegisterController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "segue.source">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static UserData.GetUserDefault():UserData.swift">
+      </ContextState>
+      <ContextState
+         contextName = "OOButton.didMoveToSuperview():OOButton.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.layer">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "specialized AppDelegate.application(_:didReceiveRemoteNotification:fetchCompletionHandler:):AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "json">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RegisterController.Back():RegisterController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.presentedViewController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in OOBannerView.SetBannerImage():OOBannerView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.subviews">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppData.Banner.getter:AppData.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_Banner">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in BannerData.SetBannerFromJson(result:):BannerData.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Banner">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OOButton_SMSVerify.__deallocating_deinit:OOButton_SMSVerify.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_CountTimer">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainController.SetupViewFooter():MainController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.tabBarController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BaseTableViewController.ToPersonEdit(_:):BaseTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_PersonEditController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OOButton_OneLine.ChangeStyle():OOButton_OneLine.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_MarginBottom">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OOBannerView.scrollViewDidScroll(_:):OOBannerView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.contentOffset.x">
+            </PersistentString>
+            <PersistentString
+               value = "self.flowLayout.itemSize.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginController.backToLogin(segue:):LoginController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "segue.source">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BaseTableViewController.ToPersonEdit2():BaseTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.application(_:didReceiveRemoteNotification:fetchCompletionHandler:) [inlined]:AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "userInfo">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainController.SetupPageControl():MainController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_PagerControl?.numberOfPages">
+            </PersistentString>
+            <PersistentString
+               value = "_BannerView.bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OOBannerView.SetupPageControl(parent:):OOBannerView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.frame">
+            </PersistentString>
+            <PersistentString
+               value = "self.bounds">
+            </PersistentString>
+            <PersistentString
+               value = "self.bounds.origin">
+            </PersistentString>
+            <PersistentString
+               value = "_PagerControl?.numberOfPages">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OOLoadingView.CreateLoadingView(_:):OOLoadingView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "loadview.layer.cornerRadius">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BaseWebViewController.InitProgress():BaseWebViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_Progress">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
