@@ -25,7 +25,7 @@ class TaskData:BaseData,DataFunc
         parameter["pageIndex"] = 0 as AnyObject;
         parameter["pageSize"] = 5 as AnyObject;
         
-        _WebCore.PostData(url: BaseData.TaskUrl, parameters:parameter,afterEvent: DownLoadData);
+        _WebCore.PostData(url: WebCore.Url_Task, parameters:parameter,afterEvent: DownLoadData);
     }
     
     typealias T = ETask

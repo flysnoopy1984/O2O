@@ -17,6 +17,8 @@ class SysConfig
     //资源 网站
     public static let ResHost = "https://data.iqianba.cn/";
     
+    public static let WebHost = "http://pp.iqianba.cn/";
+    
     public static func GetFullURL(virPath:String) -> URL
     {
         var fullUrl = "";

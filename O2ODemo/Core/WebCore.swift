@@ -12,10 +12,17 @@ import Alamofire
 class WebCore
 {
 
-    public static let Login_Url = SysConfig.MainHost+"api/User/Login";  //?loginName=13482710060&pwd=123456
-    public static let ImageUpload_Url = SysConfig.MainHost+"api/User/UpdateHeaderImage";
-    public static let SetNickName_Url = SysConfig.MainHost+"api/User/SetNickName";
-    public static let PersonAccount_ModifyPwd_Url = "http://pp.iqianba.cn/app/modifypwd";
+    public static let Url_Login = SysConfig.MainHost+"api/User/Login";  //?loginName=13482710060&pwd=123456
+    public static let Url_ImageUpload = SysConfig.MainHost+"api/User/UpdateHeaderImage";
+    public static let Url_SetNickName = SysConfig.MainHost+"api/User/SetNickName";
+    public static let Url_PostUserToken = SysConfig.MainHost+"api/User/SetUserDeviceToken";
+    
+    public static let Url_Banner = SysConfig.MainHost+"api/banner/GetLatest";
+    
+    public static let Url_Task = SysConfig.MainHost+"api/Task/QueryTask";
+
+    
+    public static let PersonAccount_ModifyPwd_Url = SysConfig.WebHost+"app/modifypwd";
     
     
     
@@ -44,7 +51,7 @@ class WebCore
                         afterEvent(result);
                     }
                 case .failure:
-                    print ("getTask Error");
+                    print ("Post Data Error");
                     break
                     
                 }
@@ -79,7 +86,7 @@ class WebCore
                 FailureUpload:@escaping FailureUpload){
         
         let userPhone = UserData.GetPhone();
-        let url = WebCore.ImageUpload_Url+"?UserPhone="+userPhone;
+        let url = WebCore.Url_ImageUpload+"?UserPhone="+userPhone;
       //  let urlRequest = URLRequest(url: URL(string: url)!);
         
         let data  = UploadImg.jpegData(compressionQuality:0.5) //UIImageJPEGRepresentation(UploadImg,0.5);

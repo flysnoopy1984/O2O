@@ -31,7 +31,10 @@ class LoginController: BaseUIViewController {
         if VerifyFormControl(){
             let loginName = _txtPhone?.text;
             let pwd = _txtPwd?.text;
-            let url = WebCore.Login_Url+"?loginName=" + loginName!+"&pwd="+pwd!;
+            let IDFV = UIDevice.current.identifierForVendor;
+            let url = WebCore.Url_Login+"?loginName=\(loginName!)&pwd=\(pwd!)&DeviceIdentify="+(IDFV?.uuidString)!;
+          //  url+="?loginName=" + loginName! + "&pwd=" + pwd! + "&DeviceIdentify="+IDFV;
+            print(url);
             _WebCore.PostData(url: url, afterEvent: LoginCallBack);
 
         }
@@ -41,6 +44,8 @@ class LoginController: BaseUIViewController {
     }
     
     func Login_SaveUserDefault(result:JSON){
+        
+        
         let ui = result["resultObj"];
         let name = ui["LoginName"].stringValue;
         let Phone = ui["Phone"].stringValue;

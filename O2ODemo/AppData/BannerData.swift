@@ -36,7 +36,7 @@ class BannerData:BaseData,DataFunc{
             Banner[i] = banner;
         }
         
-        _WebCore.PostData(url: BaseData.BannerUrl, afterEvent: SetBannerFromJson);
+        _WebCore.PostData(url: WebCore.Url_Banner, afterEvent: SetBannerFromJson);
     }
     
    

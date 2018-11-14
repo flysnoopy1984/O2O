@@ -43,9 +43,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         
+        
         // 将客户端DeviceToken和用户手机号传给服务端
-       //  print("Get Push token: \(deviceToken.hexString)")
-            UserData.PostDeviceToken(deviceToken:deviceToken.hexString);
+         print("Get Push token: \(deviceToken.hexString)")
+        print("IDFV: \(String(describing: UIDevice.current.identifierForVendor?.uuidString))");
+         UserData.PostDeviceToken(deviceToken:deviceToken.hexString);
         
     }
     
@@ -56,8 +58,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         var json  = JSON(msg);
         var alert = json["alert"].string
-          print("alert消息：\(alert)")
-         print("收到新消息Active\(json)")
+        print("alert消息：\(alert)")
+        print("收到新消息Active\(json)")
         if application.applicationState == UIApplication.State.active {
             // 代表从前台接受消息app
         }else{

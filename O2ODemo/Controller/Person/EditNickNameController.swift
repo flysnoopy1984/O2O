@@ -34,7 +34,7 @@ class EditNickNameController: BaseUIViewController {
                 p["NickName"] = newName as AnyObject;
                 p["Phone"] = phone as AnyObject
                 
-                wc.PostData(url: WebCore.SetNickName_Url, parameters: p, afterEvent: AfterPostNickName)
+                wc.PostData(url: WebCore.Url_SetNickName, parameters: p, afterEvent: AfterPostNickName)
                 
             }
             else {

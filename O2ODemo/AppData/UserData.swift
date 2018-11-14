@@ -14,6 +14,7 @@ class UserData:NSObject,NSCoding
     var _NickName:String = "";
     var _Phone:String = "";
     var _DeviceToken:String = "";
+    var _IDFV:String = "";
     
     var _IsLogin:Bool = Bool.init();
     
@@ -33,6 +34,7 @@ class UserData:NSObject,NSCoding
         self._Phone = decoder.decodeObject(forKey: "Phone") as? String ?? ""
         self._IsLogin = decoder.decodeBool(forKey: "IsLogin");
         self._DeviceToken = decoder.decodeObject(forKey: "DeviceToken") as? String ?? ""
+        self._IDFV = decoder.decodeObject(forKey: "IDFV") as? String ?? ""
       //  self._HeadImg = decoder.de
     }
     
@@ -42,6 +44,7 @@ class UserData:NSObject,NSCoding
         coder.encode(_Phone, forKey:"Phone")
         coder.encode(_IsLogin, forKey:"IsLogin")
         coder.encode(_DeviceToken,forKey: "DeviceToken")
+        coder.encode(_IDFV,forKey: "IDFV")
     }
     
     // 0  登录中 ，-1 登出
@@ -58,9 +61,11 @@ class UserData:NSObject,NSCoding
     static func SaveToUserDefault(ud:UserData){
         SaveToUserDefault(name: ud._NickName, phone: ud._Phone, IsLogin: ud._IsLogin);
     }
+    
     static func SaveToUserDefault(name:String, phone:String,IsLogin:Bool){
         
         var ud = UserData.GetUserDefault();
+        
         if ud == nil{
             ud = UserData();
         }
@@ -126,10 +131,10 @@ class UserData:NSObject,NSCoding
         }
     }
     
-    static func SetDeviceToken(){
+    static func SetDeviceToken(deviceToken:String){
         let ud = GetUserDefault();
         if ud == nil{
-            
+            ud?._DeviceToken = deviceToken;
         }
     }
     
@@ -137,9 +142,13 @@ class UserData:NSObject,NSCoding
     static func PostDeviceToken(deviceToken:String)
     {
         let wc = WebCore();
-        var url = "";
-        url += "?DevToken="+deviceToken+"&phone="+GetPhone();
+     
+        let IDFV = UIDevice.current.identifierForVendor;
+        
+        let url = WebCore.Url_PostUserToken+"?DeviceToken="+deviceToken+"&IDFV="+(IDFV?.uuidString)!+"&DeviceChannel=1";
+        
         wc.PostData(url: url, afterEvent: wc.EmptyAfterLoad);
+       
         
     }
     
