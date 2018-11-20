@@ -49,6 +49,7 @@ class OOTextField_OneLine: BaseTextField {
     }
 
 
+
     //输入框事件
     @objc func textChangeWithSMSButton(_ textField:OOTextField_OneLine) {
  
@@ -60,13 +61,22 @@ class OOTextField_OneLine: BaseTextField {
                 _SmsBtn?.DisableButton();
             }
         }
+        else{
+            let textCount = self.text?.count;
+            if  textCount == 0{
+                _SmsBtn?.EndCounting(true);
+            }
+        }
  
     }
     
     //返回是否有输入
     func HasPhoneTextValue() -> Bool{
-        let isempty =  (self.text?.count)! > 0;
-        if isempty{
+      
+        let textCount = self.text?.count;
+      //  print("Text Count:\(self.text?.count)");
+        if   textCount != 11{
+           
             return false;
         }
         else{
@@ -75,22 +85,7 @@ class OOTextField_OneLine: BaseTextField {
         }
     }
     
-    func isTelNumber(num:String)->Bool    
-    {
-        
-        let mobile = "^1((3[0-9]|4[57]|5[0-35-9]|7[0678]|8[0-9])\\d{8}$)"
-        let regextestmobile = NSPredicate(format: "SELF MATCHES %@",mobile)
-
-        if (regextestmobile.evaluate(with: num) == true)
-        {
-            return true
-        }
-        else
-        {
-            return false
-        }
-        
-    }
+   
 
     override func didMoveToSuperview() {
      //   SetupNotification();

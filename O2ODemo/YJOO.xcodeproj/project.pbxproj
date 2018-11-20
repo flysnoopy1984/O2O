@@ -52,6 +52,8 @@
 		1B9FF66620B5036000DF5B8A /* OOData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FF66420B5036000DF5B8A /* OOData.xcdatamodeld */; };
 		1B9FF66820B5036100DF5B8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B9FF66720B5036100DF5B8A /* Assets.xcassets */; };
 		1B9FF66B20B5036100DF5B8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9FF66920B5036100DF5B8A /* LaunchScreen.storyboard */; };
+		1BAB8134219E9B9D002327FB /* SMSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAB8133219E9B9D002327FB /* SMSManager.swift */; };
+		1BAB8137219EC6CE002327FB /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAB8136219EC6CE002327FB /* UITextFieldExtension.swift */; };
 		1BAF880120ED17E6003DC22A /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAF880020ED17E6003DC22A /* UserData.swift */; };
 		1BB996A820CF605A008E6875 /* BaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB996A720CF605A008E6875 /* BaseData.swift */; };
 		1BB996AB20CF6381008E6875 /* EBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB996AA20CF6381008E6875 /* EBanner.swift */; };
@@ -129,6 +131,8 @@
 		1B9FF66720B5036100DF5B8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B9FF66A20B5036100DF5B8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B9FF66C20B5036100DF5B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BAB8133219E9B9D002327FB /* SMSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSManager.swift; sourceTree = "<group>"; };
+		1BAB8136219EC6CE002327FB /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		1BAF880020ED17E6003DC22A /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		1BB996A720CF605A008E6875 /* BaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseData.swift; sourceTree = "<group>"; };
 		1BB996AA20CF6381008E6875 /* EBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBanner.swift; sourceTree = "<group>"; };
@@ -195,8 +199,6 @@
 		1B371C56214904E20051893E /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				1B371C57214905260051893E /* ImageExtension.swift */,
-				1B16B43C2150ED850003D12C /* ImageViewExtension.swift */,
 				1B9C5A6F2154CBE10011E995 /* OOImageView_UserHeader.swift */,
 			);
 			path = Image;
@@ -325,6 +327,23 @@
 			path = O2ODemo;
 			sourceTree = "<group>";
 		};
+		1BAB8135219EC60B002327FB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1B16B43C2150ED850003D12C /* ImageViewExtension.swift */,
+				1B371C57214905260051893E /* ImageExtension.swift */,
+				1BAB8136219EC6CE002327FB /* UITextFieldExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1BAB8138219EC956002327FB /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		1BAF87FF20ED0BA2003DC22A /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,6 +373,7 @@
 				1BBC6498212FEB4700470B57 /* SysHelper.swift */,
 				1BD29EEF215211DC00149071 /* ControllerManager.swift */,
 				1BD29EF12152400800149071 /* OOFileManager.swift */,
+				1BAB8133219E9B9D002327FB /* SMSManager.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -401,6 +421,8 @@
 		1BDFD9A120C51F3B0002D1CC /* CustomControl */ = {
 			isa = PBXGroup;
 			children = (
+				1BAB8138219EC956002327FB /* Delegate */,
+				1BAB8135219EC60B002327FB /* Extension */,
 				1B969A6E214FAB2100A49B3B /* TableView_Cell */,
 				1B371C56214904E20051893E /* Image */,
 				1B4E7700213D14B80045D906 /* View */,
@@ -626,6 +648,7 @@
 				1BC44D2B20EB474600AB13EC /* CreateTaskController.swift in Sources */,
 				1B488165216B2D0500C24A72 /* BaseWebViewController.swift in Sources */,
 				1B2723BA20C68E15007825D4 /* OOBannerView.swift in Sources */,
+				1BAB8134219E9B9D002327FB /* SMSManager.swift in Sources */,
 				1B5ED1F620D8CE4400B41E27 /* OOTaskCell.swift in Sources */,
 				1B23F87620E5C2B70082B94B /* TaskData.swift in Sources */,
 				1B45491221353920002B4361 /* OOTextField.swift in Sources */,
@@ -642,6 +665,7 @@
 				1B4E7702213D15530045D906 /* OOScrollView.swift in Sources */,
 				1B3880A3213E514700EFEEE8 /* OOButton_SMSVerify.swift in Sources */,
 				1BAF880120ED17E6003DC22A /* UserData.swift in Sources */,
+				1BAB8137219EC6CE002327FB /* UITextFieldExtension.swift in Sources */,
 				1B9C5A702154CBE10011E995 /* OOImageView_UserHeader.swift in Sources */,
 				1B23F87820E5C7090082B94B /* ETask.swift in Sources */,
 			);

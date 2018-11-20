@@ -22,6 +22,8 @@ class OOButton_SMSVerify: OOButton {
     var _CountTimer: DispatchSourceTimer?;
     var _IsCounting = false;
     var RefTextField:OOTextField_OneLine?;
+    var LoadingView:OOLoadingView?;
+    
     
     var RemainSec:Int = 0 {
         willSet{
@@ -44,6 +46,8 @@ class OOButton_SMSVerify: OOButton {
         super.init(frame: frame);
         ChangeStyle();
         
+        
+        
         self.addTarget(self, action: #selector(StartCounting(_:)), for: .touchUpInside)
     }
     
@@ -55,6 +59,12 @@ class OOButton_SMSVerify: OOButton {
     
     //按钮点击后开始倒计时 - 60秒
     @objc func StartCounting(_ sender:OOButton_SMSVerify){
+        
+        //发送短信
+        SendSMS();
+        
+        
+        //开始计时
         if _CountTimer == nil || _CountTimer?.isCancelled == true  {
             _CountTimer = DispatchSource.makeTimerSource(flags: [], queue: DispatchQueue.main);
         }
@@ -74,25 +84,30 @@ class OOButton_SMSVerify: OOButton {
 
     }
     
-    func EndCounting(){
+    func EndCounting(_ IsFromTextFiled:Bool = false){
         
         if self._CountTimer != nil {
             self._CountTimer?.suspend();
         }
+        
         _IsCounting = false;
-        //判断是否给了输入框引用。主调用者配置
-        if RefTextField != nil{
-            if RefTextField?.HasPhoneTextValue() == true {
+        
+        if !IsFromTextFiled {
+            //判断是否给了输入框引用。主调用者配置
+            if RefTextField != nil{
+                if RefTextField?.HasPhoneTextValue() == true {
+                    EnableButton();
+                }
+                else{
+                    DisableButton();
+                }
+            }
+            else
+            {
                 EnableButton();
             }
-            else{
-                DisableButton();
-            }
         }
-        else
-        {
-            EnableButton();
-        }
+       
         
         self.setTitle("获取验证码", for: .disabled);
     }
@@ -173,6 +188,11 @@ class OOButton_SMSVerify: OOButton {
         self.layer.backgroundColor = SysConfig.Color_Register_EnableButton.cgColor;
     }
     
+    func SendSMS(){
+        
+        let sms = SMSManager(PhoneNumber: (RefTextField?.text)!);
+        sms.GetNormalVerifyMessage();
+    }
   
     
 }

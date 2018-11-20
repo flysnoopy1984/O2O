@@ -36,7 +36,7 @@ class SysConfig
     //发短信SMS按钮灰色
     public static let Color_Register_DisableButton = UIColor.init(red: 245/255, green: 245/255, blue: 245/255, alpha: 100);
     //发短信按钮可用
-    public static let Color_Register_EnableButton = UIColor.init(red: 222/255, green: 222/255, blue: 222/255, alpha: 100);
+    public static let Color_Register_EnableButton = UIColor.init(red: 248/255, green: 255/255, blue: 175/255, alpha: 100);
     
     //发短信间隔时间（秒）
     public static let SMS_RepeatSend_Sec = 60;

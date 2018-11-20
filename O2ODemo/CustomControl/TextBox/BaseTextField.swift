@@ -32,7 +32,9 @@ class BaseTextField: UITextField {
         
     }
     
-    func CheckFieldValue(checkEmpty:Bool = true) -> Bool
+   
+    
+    func CheckFieldIsEmpty(checkEmpty:Bool = true) -> Bool
     {
         if checkEmpty{
             return (self.text?.trimmingCharacters(in: .whitespaces) != "")
@@ -54,27 +56,7 @@ class BaseTextField: UITextField {
             _AfterInputDone!();
         }
     }
-//    @objc func keyboardWillShow(_ notification: Notification) {
-//        var info = notification.userInfo;
-//      //  info?[UIKeyboardFrameEndUserInfoKey]
-//        let kbrect = (info?[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue;
-//        let changeY = kbrect.origin.y - UIScreen.main.bounds.height;
-//        let duration = info?[UIKeyboardAnimationDurationUserInfoKey] as!Double
-//
-//
-//    }
-    
-//    func SetupNotification(){
-//
-//        NotificationCenter.default
-//            .addObserver(self,selector: #selector(keyboardWillShow(_:)),
-//                         name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-//    }
-//
-//    func RemoveNotification(){
-//        NotificationCenter.default.removeObserver(self);
-//    }
-    
+
   
     
 

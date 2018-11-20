@@ -12,18 +12,21 @@ import Alamofire
 class WebCore
 {
 
+    public static let Url_Register = SysConfig.MainHost+"api/User/Register"
     public static let Url_Login = SysConfig.MainHost+"api/User/Login";  //?loginName=13482710060&pwd=123456
     public static let Url_ImageUpload = SysConfig.MainHost+"api/User/UpdateHeaderImage";
     public static let Url_SetNickName = SysConfig.MainHost+"api/User/SetNickName";
     public static let Url_PostUserToken = SysConfig.MainHost+"api/User/SetUserDeviceToken";
     
     public static let Url_Banner = SysConfig.MainHost+"api/banner/GetLatest";
-    
     public static let Url_Task = SysConfig.MainHost+"api/Task/QueryTask";
 
+    //SMS
+    public static let Url_SMSSend = SysConfig.MainHost+"api/sms/GetMessage";
+    public static let Url_SMSConfirm = SysConfig.MainHost+"api/sms/ConfirmVerification";
     
-    public static let PersonAccount_ModifyPwd_Url = SysConfig.WebHost+"app/modifypwd";
-    
+    //Web 修改密码
+    public static let Url_PersonAccount_ModifyPwd = SysConfig.WebHost+"app/modifypwd";
     
     
     typealias SuccessUpload = (JSON) -> Void;

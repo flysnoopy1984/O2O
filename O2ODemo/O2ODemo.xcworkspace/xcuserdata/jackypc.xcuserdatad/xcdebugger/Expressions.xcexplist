@@ -6,6 +6,14 @@
          contextName = "UserData.init(coder:):UserData.swift">
       </ContextState>
       <ContextState
+         contextName = "BaseWebViewController.InitProgress():BaseWebViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_Progress">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "RegisterController.viewWillAppear(_:):RegisterController.swift">
          <PersistentStrings>
             <PersistentString
@@ -138,6 +146,14 @@
       </ContextState>
       <ContextState
          contextName = "closure #1 in MainController.AnalyBanner():MainController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "SMSManager.CallBack_GetNormalVerifyMessage(result:):SMSManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "IsScuess">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "closure #1 in WebCore.LoadDataFromWeb(url:afterEvent:):WebCore.swift">
@@ -335,10 +351,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "BaseWebViewController.InitProgress():BaseWebViewController.swift">
+         contextName = "OOTextField_OneLine.HasPhoneTextValue():OOTextField_OneLine.swift">
          <PersistentStrings>
             <PersistentString
-               value = "_Progress">
+               value = "isempty">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

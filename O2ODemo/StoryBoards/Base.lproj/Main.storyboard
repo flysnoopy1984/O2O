@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M5r-Zh-RKP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M5r-Zh-RKP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,7 +14,7 @@
         <!--主页-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainVC" id="BYZ-38-t0r" customClass="MainController" customModule="O2ODemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVC" id="BYZ-38-t0r" customClass="MainController" customModule="YJOO" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,7 +38,7 @@
                                 </constraints>
                                 <color key="sectionIndexBackgroundColor" red="0.27661668290000002" green="0.65306439599999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TaskCell" rowHeight="80" id="pFW-4V-qRe" customClass="OOTaskCell" customModule="O2ODemo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TaskCell" rowHeight="80" id="pFW-4V-qRe" customClass="OOTaskCell" customModule="YJOO" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pFW-4V-qRe" id="IFt-sl-yV7">
@@ -147,8 +147,8 @@
         <!--Login Controller-->
         <scene sceneID="xhQ-gt-WZO">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" id="jzz-BC-J8O" customClass="LoginController" customModule="O2ODemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iJV-rJ-Xyb" customClass="OOScrollView" customModule="O2ODemo" customModuleProvider="target">
+                <viewController storyboardIdentifier="LoginVC" id="jzz-BC-J8O" customClass="LoginController" customModule="YJOO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iJV-rJ-Xyb" customClass="OOScrollView" customModule="YJOO" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -159,7 +159,7 @@
                                     <constraint firstAttribute="width" constant="120" id="huq-3Q-Oq7"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="wFx-up-PtY" userLabel="txtPhone" customClass="OOTextField_OneLine" customModule="O2ODemo" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="wFx-up-PtY" userLabel="txtPhone" customClass="OOTextField_OneLine" customModule="YJOO" customModuleProvider="target">
                                 <rect key="frame" x="24" y="231" width="327" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="iOO-Sl-4QI"/>
@@ -168,7 +168,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wP-yQ-5jD" userLabel="btnLogin" customClass="OOButton" customModule="O2ODemo" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wP-yQ-5jD" userLabel="btnLogin" customClass="OOButton" customModule="YJOO" customModuleProvider="target">
                                 <rect key="frame" x="25" y="414" width="325" height="45"/>
                                 <color key="backgroundColor" red="0.21176470588235294" green="0.69411764705882351" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -181,7 +181,7 @@
                                     <action selector="DoLogin" destination="jzz-BC-J8O" eventType="touchUpInside" id="4A2-rf-wXj"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="登录密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9Ra-o1-oCm" userLabel="txtPwd" customClass="OOTextField_OneLine" customModule="O2ODemo" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="登录密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9Ra-o1-oCm" userLabel="txtPwd" customClass="OOTextField_OneLine" customModule="YJOO" customModuleProvider="target">
                                 <rect key="frame" x="24" y="305" width="327" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="UFG-ae-KXo"/>
@@ -232,7 +232,7 @@
         <!--Loading-->
         <scene sceneID="hUv-bk-YOM">
             <objects>
-                <viewController storyboardIdentifier="LoadingVC" id="wL1-Ng-EHS" userLabel="Loading" customClass="LoadingController" customModule="O2ODemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoadingVC" id="wL1-Ng-EHS" userLabel="Loading" customClass="LoadingController" customModule="YJOO" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" id="jGq-jt-N0h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -277,8 +277,8 @@
         <!--Register-->
         <scene sceneID="prI-uk-dhh">
             <objects>
-                <viewController storyboardIdentifier="RegisterVC" automaticallyAdjustsScrollViewInsets="NO" id="I65-uS-dte" userLabel="Register" customClass="RegisterController" customModule="O2ODemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vxp-xl-JLA" customClass="OOScrollView" customModule="O2ODemo" customModuleProvider="target">
+                <viewController storyboardIdentifier="RegisterVC" automaticallyAdjustsScrollViewInsets="NO" id="I65-uS-dte" userLabel="Register" customClass="RegisterController" customModule="YJOO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vxp-xl-JLA" customClass="OOScrollView" customModule="YJOO" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -295,18 +295,18 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="请输入手机号码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="3fE-gO-I8e" userLabel="txtPhone" customClass="OOTextField_OneLine" customModule="O2ODemo" customModuleProvider="target">
-                                <rect key="frame" x="24" y="83" width="200" height="45"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="请输入手机号码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="3fE-gO-I8e" userLabel="txtPhone" customClass="OOTextField_OneLine" customModule="YJOO" customModuleProvider="target">
+                                <rect key="frame" x="91" y="83" width="150" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="ams-R7-SlN"/>
-                                    <constraint firstAttribute="width" constant="200" id="vOG-qF-yx8"/>
+                                    <constraint firstAttribute="width" constant="150" id="vOG-qF-yx8"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="请输入验证码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="jNe-pW-PrV" userLabel="txtVerifyCode" customClass="OOTextField_OneLine" customModule="O2ODemo" customModuleProvider="target">
-                                <rect key="frame" x="24" y="153" width="327" height="45"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="请输入验证码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="jNe-pW-PrV" userLabel="txtVerifyCode" customClass="OOTextField_OneLine" customModule="YJOO" customModuleProvider="target">
+                                <rect key="frame" x="91" y="153" width="259" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="z2I-O8-owu"/>
                                 </constraints>
@@ -314,17 +314,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="zb0-ui-3eU" userLabel="txtPwd" customClass="OOTextField_OneLine" customModule="O2ODemo" customModuleProvider="target">
-                                <rect key="frame" x="24" y="223" width="327" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="RaC-fL-dPB"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKa-pB-yos" userLabel="btnLogin" customClass="OOButton" customModule="O2ODemo" customModuleProvider="target">
-                                <rect key="frame" x="25" y="535" width="325" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKa-pB-yos" userLabel="btnLogin" customClass="OOButton" customModule="YJOO" customModuleProvider="target">
+                                <rect key="frame" x="25" y="508" width="325" height="45"/>
                                 <color key="backgroundColor" red="0.21176470589999999" green="0.69411764710000001" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="f5y-sD-MK4"/>
@@ -332,11 +323,15 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="注册"/>
+                                <connections>
+                                    <action selector="DoRegister" destination="I65-uS-dte" eventType="touchUpInside" id="aBg-ei-w7B"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ese-Zw-5SW" userLabel="btnVerify" customClass="OOButton_SMSVerify" customModule="O2ODemo" colorLabel="IBBuiltInLabel-Red">
-                                <rect key="frame" x="224" y="92" width="127" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ese-Zw-5SW" userLabel="btnVerify" customClass="OOButton_SMSVerify" customModule="YJOO" colorLabel="IBBuiltInLabel-Red">
+                                <rect key="frame" x="241" y="92" width="110" height="31"/>
                                 <color key="backgroundColor" red="0.98039215686274506" green="1" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="MGM-Gp-3Lt"/>
                                     <constraint firstAttribute="height" constant="31" id="gFw-da-C4j"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -350,25 +345,58 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ej-i4-AJr">
+                                <rect key="frame" x="13" y="95" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="验证码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSu-70-umb">
+                                <rect key="frame" x="13" y="164" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drD-YX-9aI">
+                                <rect key="frame" x="13" y="230" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="zb0-ui-3eU" userLabel="txtPwd" customClass="OOTextField_OneLine" customModule="YJOO" customModuleProvider="target">
+                                <rect key="frame" x="91" y="219" width="260" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="RaC-fL-dPB"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ese-Zw-5SW" firstAttribute="bottom" secondItem="3fE-gO-I8e" secondAttribute="bottom" constant="-5" id="0SG-KD-cXC"/>
-                            <constraint firstItem="Ese-Zw-5SW" firstAttribute="trailing" secondItem="jNe-pW-PrV" secondAttribute="trailing" id="3Qf-Kd-uJX"/>
-                            <constraint firstItem="zb0-ui-3eU" firstAttribute="trailing" secondItem="jNe-pW-PrV" secondAttribute="trailing" id="B3t-lF-sxm"/>
-                            <constraint firstItem="jNe-pW-PrV" firstAttribute="leading" secondItem="3fE-gO-I8e" secondAttribute="leading" id="D2v-1f-tsy"/>
+                            <constraint firstItem="uSu-70-umb" firstAttribute="leading" secondItem="3Ej-i4-AJr" secondAttribute="leading" id="2Xo-GC-Qg8"/>
+                            <constraint firstItem="Ese-Zw-5SW" firstAttribute="trailing" secondItem="jNe-pW-PrV" secondAttribute="trailing" constant="1" id="3Qf-Kd-uJX"/>
+                            <constraint firstItem="zb0-ui-3eU" firstAttribute="trailing" secondItem="jNe-pW-PrV" secondAttribute="trailing" constant="1" id="B3t-lF-sxm"/>
+                            <constraint firstItem="uSu-70-umb" firstAttribute="centerY" secondItem="jNe-pW-PrV" secondAttribute="centerY" constant="-1" id="CQc-N7-7S7"/>
+                            <constraint firstItem="Ese-Zw-5SW" firstAttribute="leading" secondItem="3fE-gO-I8e" secondAttribute="trailing" id="F70-Hm-32A"/>
                             <constraint firstItem="3fE-gO-I8e" firstAttribute="top" secondItem="vxp-xl-JLA" secondAttribute="top" constant="83" id="Fot-kT-mev"/>
-                            <constraint firstItem="zb0-ui-3eU" firstAttribute="leading" secondItem="3fE-gO-I8e" secondAttribute="leading" id="GAc-O6-wIV"/>
-                            <constraint firstItem="Ese-Zw-5SW" firstAttribute="leading" secondItem="3fE-gO-I8e" secondAttribute="trailing" id="Gq2-XO-uLb"/>
+                            <constraint firstItem="jNe-pW-PrV" firstAttribute="leading" secondItem="3fE-gO-I8e" secondAttribute="leading" id="RUx-FW-MEk"/>
                             <constraint firstItem="jNe-pW-PrV" firstAttribute="top" secondItem="3fE-gO-I8e" secondAttribute="bottom" constant="25" id="Tqh-Zs-RA2"/>
-                            <constraint firstItem="3fE-gO-I8e" firstAttribute="leading" secondItem="kRQ-H6-5JX" secondAttribute="leading" constant="24" id="cM7-0c-QgC"/>
+                            <constraint firstItem="3fE-gO-I8e" firstAttribute="leading" secondItem="3Ej-i4-AJr" secondAttribute="trailing" constant="10" id="Yun-eL-J2T"/>
+                            <constraint firstItem="3Ej-i4-AJr" firstAttribute="leading" secondItem="kRQ-H6-5JX" secondAttribute="leading" constant="13" id="cP7-CZ-RlD"/>
+                            <constraint firstItem="drD-YX-9aI" firstAttribute="leading" secondItem="uSu-70-umb" secondAttribute="leading" id="emc-if-fMK"/>
                             <constraint firstItem="9CU-0z-KkG" firstAttribute="trailing" secondItem="kRQ-H6-5JX" secondAttribute="trailing" id="foi-8e-KBc"/>
-                            <constraint firstItem="zKa-pB-yos" firstAttribute="top" secondItem="zb0-ui-3eU" secondAttribute="bottom" constant="267" id="j0U-bb-aRc"/>
+                            <constraint firstItem="drD-YX-9aI" firstAttribute="centerY" secondItem="zb0-ui-3eU" secondAttribute="centerY" constant="-1" id="glf-Mj-u5p"/>
+                            <constraint firstItem="zKa-pB-yos" firstAttribute="top" secondItem="zb0-ui-3eU" secondAttribute="bottom" constant="244" id="j0U-bb-aRc"/>
                             <constraint firstItem="9CU-0z-KkG" firstAttribute="top" secondItem="kRQ-H6-5JX" secondAttribute="top" id="liz-ps-9Hj"/>
-                            <constraint firstItem="zb0-ui-3eU" firstAttribute="top" secondItem="jNe-pW-PrV" secondAttribute="bottom" constant="25" id="pC3-dr-oIK"/>
+                            <constraint firstItem="zb0-ui-3eU" firstAttribute="top" secondItem="jNe-pW-PrV" secondAttribute="bottom" constant="21" id="pC3-dr-oIK"/>
                             <constraint firstItem="9CU-0z-KkG" firstAttribute="leading" secondItem="kRQ-H6-5JX" secondAttribute="leading" id="rbi-Wv-fg1"/>
                             <constraint firstItem="zKa-pB-yos" firstAttribute="centerX" secondItem="vxp-xl-JLA" secondAttribute="centerX" id="vZo-3I-rx4"/>
-                            <constraint firstItem="kRQ-H6-5JX" firstAttribute="trailing" secondItem="jNe-pW-PrV" secondAttribute="trailing" constant="24" id="zGc-Tg-ebg"/>
+                            <constraint firstItem="3Ej-i4-AJr" firstAttribute="centerY" secondItem="3fE-gO-I8e" secondAttribute="centerY" id="wFE-0R-iY5"/>
+                            <constraint firstItem="zb0-ui-3eU" firstAttribute="leading" secondItem="jNe-pW-PrV" secondAttribute="leading" id="xgj-3h-1JK"/>
+                            <constraint firstItem="kRQ-H6-5JX" firstAttribute="trailing" secondItem="jNe-pW-PrV" secondAttribute="trailing" constant="25" id="zGc-Tg-ebg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kRQ-H6-5JX"/>
                     </view>
@@ -377,6 +405,8 @@
                         <outlet property="_OOScrollView" destination="vxp-xl-JLA" id="nul-Xc-bg2"/>
                         <outlet property="_btnVerify" destination="Ese-Zw-5SW" id="ckB-sx-pSN"/>
                         <outlet property="_txtPhone" destination="3fE-gO-I8e" id="N7L-7q-xni"/>
+                        <outlet property="_txtPwd" destination="zb0-ui-3eU" id="4sy-UP-l0b"/>
+                        <outlet property="_txtVerifyCode" destination="jNe-pW-PrV" id="oW8-sW-ME5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="znf-tt-K6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -387,7 +417,7 @@
         <!--Create Task Controller-->
         <scene sceneID="tHe-cy-mSX">
             <objects>
-                <viewController storyboardIdentifier="CreateTaskVC" id="HyW-Uu-QQW" userLabel="Create Task Controller" customClass="CreateTaskController" customModule="O2ODemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateTaskVC" id="HyW-Uu-QQW" userLabel="Create Task Controller" customClass="CreateTaskController" customModule="YJOO" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3dw-fz-KzF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -448,7 +478,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="g3A-bM-kmu">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarVC" automaticallyAdjustsScrollViewInsets="NO" id="M5r-Zh-RKP" customClass="OOTabBarController" customModule="O2ODemo" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarVC" automaticallyAdjustsScrollViewInsets="NO" id="M5r-Zh-RKP" customClass="OOTabBarController" customModule="YJOO" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cso-zr-6N8">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

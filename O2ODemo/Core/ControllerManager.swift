@@ -79,8 +79,9 @@ class ControllerManager
             let sb  = UIStoryboard(name: "Main", bundle: nil);
             _LoginController = sb.instantiateViewController(withIdentifier: "LoginVC") as? LoginController;
         }
+       // _LoginController!.navigationController.c
         
-        toPage(mainVC,_LoginController!);
+        toPage(mainVC,_LoginController!,true);
     }
     //注册页面
     func ToRegisterPage(_ mainVC:UIViewController,_ isNew:Bool = false){
@@ -138,14 +139,22 @@ class ControllerManager
         mainVC.present(vc, animated: true, completion: nil);
     }
     
-    func toPage(_ mainVC:UIViewController,_ targetVC:UIViewController){
+    func toPage(_ mainVC:UIViewController,_ targetVC:UIViewController,_ NoNav:Bool = false){
      
-        if mainVC.navigationController == nil {
-            mainVC.present(targetVC, animated: true, completion: nil);
+        if NoNav == true
+        {
+             mainVC.present(targetVC, animated: true, completion: nil);
         }
-        else {
-            mainVC.navigationController?.pushViewController(targetVC, animated: true);
+        else
+        {
+            if mainVC.navigationController == nil {
+                mainVC.present(targetVC, animated: true, completion: nil);
+            }
+            else {
+                mainVC.navigationController?.pushViewController(targetVC, animated: true);
+            }
         }
+      
     }
     
     func PopPersonEdit(_ mainVC:UIViewController,AfterPopEvent:AfterPopEvent){
@@ -161,6 +170,8 @@ class ControllerManager
         mainVC.navigationController?.popToViewController(_PersonEditController!, animated: true);
         
     }
+    
+  
     
    
 }

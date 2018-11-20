@@ -25,7 +25,7 @@ class PersonAccount_ModifyPwdController: BaseWebViewController,WKScriptMessageHa
     
     override func viewDidAppear(_ animated: Bool) {
        
-         self.LoadUrlString(WebCore.PersonAccount_ModifyPwd_Url);
+         self.LoadUrlString(WebCore.Url_PersonAccount_ModifyPwd);
         
     }
     

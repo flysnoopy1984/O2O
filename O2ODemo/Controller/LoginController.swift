@@ -34,7 +34,7 @@ class LoginController: BaseUIViewController {
             let IDFV = UIDevice.current.identifierForVendor;
             let url = WebCore.Url_Login+"?loginName=\(loginName!)&pwd=\(pwd!)&DeviceIdentify="+(IDFV?.uuidString)!;
           //  url+="?loginName=" + loginName! + "&pwd=" + pwd! + "&DeviceIdentify="+IDFV;
-            print(url);
+             //print(url);
             _WebCore.PostData(url: url, afterEvent: LoginCallBack);
 
         }
@@ -94,11 +94,11 @@ class LoginController: BaseUIViewController {
     
     //登录时校验手机和密码
     func VerifyFormControl() -> Bool{
-        if !(_txtPhone?.CheckFieldValue(checkEmpty: true))!{
+        if !(_txtPhone?.CheckFieldIsEmpty(checkEmpty: true))!{
             SysHelper.AlertAndClose(alertVC: self, title: "验证失败", msg: "手机号码不能为空");
             return false;
         }
-        if !(_txtPwd?.CheckFieldValue(checkEmpty: true))!{
+        if !(_txtPwd?.CheckFieldIsEmpty(checkEmpty: true))!{
             SysHelper.AlertAndClose(alertVC: self, title: "验证失败", msg: "密码不能为空");
             return false;
         }
