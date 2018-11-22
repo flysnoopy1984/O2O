@@ -22,7 +22,22 @@ class OOFileManager {
         }
     }
  
- 
+    func SetUserHeaderImage(result:JSON){
+        let ImgUrl = SysConfig.ResHost+result["resultObj"]["HeaderImgUrl"].stringValue;
+       
+        let wc = WebCore();
+        
+        print("imageUrl:\(ImgUrl)");
+        if ImgUrl != "" 
+        {
+            if !ExistFile_HeaderImage() {
+                let imgPath = wc.DownloadFile(url: ImgUrl,SavePath: SysConfig.HeaderDirPath_FileName);
+                print(imgPath);
+            }
+            
+        }
+        
+    }
     
     func ExistFile(FilePath:String) -> Bool {
 

@@ -63,12 +63,13 @@ class WebCore
       //  return result;
     }
     
-    func DownloadFile(url:String)->String{
+    func DownloadFile(url:String,SavePath:String)->String{
         var result = "";
+        //SysConfig.HeaderDirPath_FileName
         let destination : DownloadRequest.DownloadFileDestination = {_,_ in
             let docUrl = FileManager.default.urls(for:.documentDirectory, in:.userDomainMask)[0]
             
-            let fileUrl = docUrl.appendingPathComponent(SysConfig.HeaderDirPath_FileName);
+            let fileUrl = docUrl.appendingPathComponent(SavePath);
             
             return (fileUrl,[.removePreviousFile,.createIntermediateDirectories]);
         };

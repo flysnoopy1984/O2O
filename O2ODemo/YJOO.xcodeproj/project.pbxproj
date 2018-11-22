@@ -40,6 +40,7 @@
 		1B5ED1F620D8CE4400B41E27 /* OOTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5ED1F520D8CE4400B41E27 /* OOTaskCell.swift */; };
 		1B5ED1F820D8CF3700B41E27 /* EItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5ED1F720D8CF3700B41E27 /* EItem.swift */; };
 		1B7A164C2121548A00ECF243 /* OOButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A164B2121548A00ECF243 /* OOButton.swift */; };
+		1B7A475921A40EF40068842B /* OOMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A475821A40EF40068842B /* OOMessageView.swift */; };
 		1B969A69214F96BD00A49B3B /* OOLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B969A68214F96BD00A49B3B /* OOLoadingView.swift */; };
 		1B969A6B214F997700A49B3B /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B969A6A214F997700A49B3B /* BaseTableViewController.swift */; };
 		1B969A6D214F9D5800A49B3B /* PersonEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B969A6C214F9D5800A49B3B /* PersonEditController.swift */; };
@@ -68,6 +69,7 @@
 		1BD29EF22152400800149071 /* OOFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD29EF12152400800149071 /* OOFileManager.swift */; };
 		1BDC84222167303900B021B5 /* PersonAccount_IndexController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC84212167303900B021B5 /* PersonAccount_IndexController.swift */; };
 		1BDE4410218C489D0041A3B8 /* AppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE440F218C489D0041A3B8 /* AppDelegateExtension.swift */; };
+		1BE62FF621A52B7400E1813F /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE62FF421A52B7400E1813F /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +119,7 @@
 		1B5ED1F520D8CE4400B41E27 /* OOTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOTaskCell.swift; sourceTree = "<group>"; };
 		1B5ED1F720D8CF3700B41E27 /* EItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EItem.swift; sourceTree = "<group>"; };
 		1B7A164B2121548A00ECF243 /* OOButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOButton.swift; sourceTree = "<group>"; };
+		1B7A475821A40EF40068842B /* OOMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOMessageView.swift; sourceTree = "<group>"; };
 		1B969A68214F96BD00A49B3B /* OOLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOLoadingView.swift; sourceTree = "<group>"; };
 		1B969A6A214F997700A49B3B /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		1B969A6C214F9D5800A49B3B /* PersonEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonEditController.swift; sourceTree = "<group>"; };
@@ -147,6 +150,7 @@
 		1BD29EF12152400800149071 /* OOFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOFileManager.swift; sourceTree = "<group>"; };
 		1BDC84212167303900B021B5 /* PersonAccount_IndexController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonAccount_IndexController.swift; sourceTree = "<group>"; };
 		1BDE440F218C489D0041A3B8 /* AppDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateExtension.swift; sourceTree = "<group>"; };
+		1BE62FF421A52B7400E1813F /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		1BEF6066218BFD90000AA0AA /* YJOO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YJOO.entitlements; sourceTree = "<group>"; };
 		2D587CF0BA599A65AB4E1E0B /* Pods-O2ODemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-O2ODemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-O2ODemo/Pods-O2ODemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -231,6 +235,7 @@
 			children = (
 				1B4E7701213D15530045D906 /* OOScrollView.swift */,
 				1B969A68214F96BD00A49B3B /* OOLoadingView.swift */,
+				1B7A475821A40EF40068842B /* OOMessageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -407,6 +412,7 @@
 				1B1C3D7321366AC200F7DC8B /* LoginController.swift */,
 				1B4E76FE213CD4580045D906 /* RegisterController.swift */,
 				1BD122FF20FDB72100CB330A /* OOTabBarController.swift */,
+				1BE62FF421A52B7400E1813F /* TestViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -616,6 +622,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B16B43D2150ED850003D12C /* ImageViewExtension.swift in Sources */,
+				1B7A475921A40EF40068842B /* OOMessageView.swift in Sources */,
 				1B969A69214F96BD00A49B3B /* OOLoadingView.swift in Sources */,
 				1B30A15E20C7E09D0014806B /* OOBannerCell.swift in Sources */,
 				1B371C58214905260051893E /* ImageExtension.swift in Sources */,
@@ -649,6 +656,7 @@
 				1B488165216B2D0500C24A72 /* BaseWebViewController.swift in Sources */,
 				1B2723BA20C68E15007825D4 /* OOBannerView.swift in Sources */,
 				1BAB8134219E9B9D002327FB /* SMSManager.swift in Sources */,
+				1BE62FF621A52B7400E1813F /* TestViewController.swift in Sources */,
 				1B5ED1F620D8CE4400B41E27 /* OOTaskCell.swift in Sources */,
 				1B23F87620E5C2B70082B94B /* TaskData.swift in Sources */,
 				1B45491221353920002B4361 /* OOTextField.swift in Sources */,

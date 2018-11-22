@@ -81,6 +81,20 @@ class UserData:NSObject,NSCoding
         
     }
     
+    // 登录后用户数据持久化
+    static func SaveToUserDefault(result:JSON){
+        let ui = result["resultObj"];
+        let name = ui["LoginName"].stringValue;
+        let Phone = ui["Phone"].stringValue;
+        
+        SaveToUserDefault(name:name,phone:Phone,IsLogin:true);
+        
+    }
+    
+    //登录后用户头像下载
+   
+    
+    
     
     
     static func IsLogin() -> Bool{
@@ -150,6 +164,16 @@ class UserData:NSObject,NSCoding
         wc.PostData(url: url, afterEvent: wc.EmptyAfterLoad);
        
         
+    }
+    //用户登入后设置持久化用户，并设置头像
+    
+    static func SetUserProfileAfterLogin(result:JSON){
+        //持久化
+        SaveToUserDefault(result: result);
+        //设置头像
+        let fm = OOFileManager();
+        fm.SetUserHeaderImage(result: result);
+     //   SetUserHeader(result: result);
     }
     
     

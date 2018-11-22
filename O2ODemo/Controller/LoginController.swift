@@ -43,31 +43,8 @@ class LoginController: BaseUIViewController {
         }
     }
     
-    func Login_SaveUserDefault(result:JSON){
-        
-        
-        let ui = result["resultObj"];
-        let name = ui["LoginName"].stringValue;
-        let Phone = ui["Phone"].stringValue;
-       
-       
-        UserData.SaveToUserDefault(name: name, phone: Phone, IsLogin: true);
-        
-    }
-    
-    func Login_SetUserHeader(result:JSON){
-        let ImgUrl = SysConfig.ResHost+result["resultObj"]["HeaderImgUrl"].stringValue;
-        print("imageUrl:\(ImgUrl)");
-        if ImgUrl != ""
-        {
-            if !_OOFileManager.ExistFile_HeaderImage() {
-                let imgPath = _WebCore.DownloadFile(url: ImgUrl);
-                print(imgPath);
-            }
-           
-        }
-     
-    }
+
+   
     
     //登录结果处理，成功或失败
     func LoginCallBack(result:JSON){
@@ -76,10 +53,8 @@ class LoginController: BaseUIViewController {
          _LoadingView.CloseLoading();
         if IsScuess == true
         {
-           // 用户数据持久化
-            Login_SaveUserDefault(result: result);
-            //下载用户头像
-            Login_SetUserHeader(result: result);
+           // 用户数据持久化,下载用户头像
+            UserData.SetUserProfileAfterLogin(result: result);
             //跳转主页
             ControllerManager.Single.ToMainPage(self);
         }
@@ -88,8 +63,6 @@ class LoginController: BaseUIViewController {
             let errMsg = result["ErrorMsg"].stringValue;
             SysHelper.AlertAndClose(alertVC: self, title: "登录失败", msg: errMsg);
         }
-        
-     
     }
     
     //登录时校验手机和密码

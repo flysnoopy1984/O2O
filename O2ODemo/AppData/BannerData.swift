@@ -69,7 +69,7 @@ class BannerData:BaseData,DataFunc{
             banner.Pos = item["Position"].int!;
             banner.Title = item["Title"].string!;
             
-            let imgUrl = SysConfig.GetFullURL(virPath: banner.ImgUrl);
+            let imgUrl = SysConfig.CombineResouceFullURL(virPath: banner.ImgUrl);
             let data = NSData(contentsOf: imgUrl);
             
             banner.Image = UIImage(data: data! as Data);

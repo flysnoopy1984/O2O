@@ -6,10 +6,10 @@
          contextName = "UserData.init(coder:):UserData.swift">
       </ContextState>
       <ContextState
-         contextName = "BaseWebViewController.InitProgress():BaseWebViewController.swift">
+         contextName = "OOTextField_OneLine.HasPhoneTextValue():OOTextField_OneLine.swift">
          <PersistentStrings>
             <PersistentString
-               value = "_Progress">
+               value = "isempty">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -126,13 +126,10 @@
          contextName = "static UserData.SaveToUserDefault(name:phone:IsLogin:):UserData.swift">
       </ContextState>
       <ContextState
-         contextName = "OOBannerView.ReAdjustImage():OOBannerView.swift">
+         contextName = "SMSManager.CallBack_GetNormalVerifyMessage(result:):SMSManager.swift">
          <PersistentStrings>
             <PersistentString
-               value = "_CurIndexPath?.item">
-            </PersistentString>
-            <PersistentString
-               value = "_Data.GetCount() ">
+               value = "IsScuess">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -145,15 +142,18 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in MainController.AnalyBanner():MainController.swift">
-      </ContextState>
-      <ContextState
-         contextName = "SMSManager.CallBack_GetNormalVerifyMessage(result:):SMSManager.swift">
+         contextName = "OOBannerView.ReAdjustImage():OOBannerView.swift">
          <PersistentStrings>
             <PersistentString
-               value = "IsScuess">
+               value = "_CurIndexPath?.item">
+            </PersistentString>
+            <PersistentString
+               value = "_Data.GetCount() ">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in MainController.AnalyBanner():MainController.swift">
       </ContextState>
       <ContextState
          contextName = "closure #1 in WebCore.LoadDataFromWeb(url:afterEvent:):WebCore.swift">
@@ -248,6 +248,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "specialized OOMessageView.CreateMessageView(msg:):OOMessageView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "posx">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "MainController.SetupViewFooter():MainController.swift">
          <PersistentStrings>
             <PersistentString
@@ -315,6 +323,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "BaseWebViewController.InitProgress():BaseWebViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_Progress">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "MainController.SetupPageControl():MainController.swift">
          <PersistentStrings>
             <PersistentString
@@ -347,14 +363,6 @@
          <PersistentStrings>
             <PersistentString
                value = "loadview.layer.cornerRadius">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "OOTextField_OneLine.HasPhoneTextValue():OOTextField_OneLine.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "isempty">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

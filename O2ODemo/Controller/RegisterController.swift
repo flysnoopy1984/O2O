@@ -21,6 +21,7 @@ class RegisterController: BaseUIViewController {
     
     @IBOutlet var _btnVerify:OOButton_SMSVerify?;
     lazy var _LoadingView:OOLoadingView = OOLoadingView(self);
+    lazy var _MessageView:OOMessageView = OOMessageView(self);
 
     @IBAction func DoRegister(){
          _LoadingView.ShowLoading();
@@ -51,15 +52,22 @@ class RegisterController: BaseUIViewController {
          _LoadingView.CloseLoading();
         
         guard IsScuess == false else{
-            SysHelper.AlertMessage(vc: self, title: "成功", msg: "恭喜！已注册成功！", AfterAlertEvent: AfterAlert_RegisterSuccess)
-            
+//            SysHelper.AlertMessage(vc: self, title: "成功", msg: "恭喜！已注册成功！", AfterAlertEvent: AfterAlert_RegisterSuccess)
+           
+          
+            //用户持久化并下载用户头像
+            UserData.SetUserProfileAfterLogin(result: result);
+
+            _MessageView.Show(msgText: "已注册成功！",title: "恭喜！",complete: AfterAlert_RegisterSuccess);
             return;
         }
     
     }
     
     func AfterAlert_RegisterSuccess(){
-        
+      
+        //跳转主页
+        ControllerManager.Single.ToMainPage(self);
     }
     
     func VerifyFormControl() -> Bool{

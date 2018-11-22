@@ -75,7 +75,7 @@ class OOLoadingView {
         bkView.backgroundColor = UIColor.black;
         //添加圆角
         bkView.layer.cornerRadius = 10;
-        bkView.clipsToBounds = true;
+       
         
         let w = CGFloat(20);
         let h = CGFloat(20);

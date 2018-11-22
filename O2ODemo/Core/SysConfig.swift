@@ -19,11 +19,11 @@ class SysConfig
     
     public static let WebHost = "http://pp.iqianba.cn/";
     
-    public static func GetFullURL(virPath:String) -> URL
+    public static func CombineResouceFullURL(virPath:String) -> URL
     {
         var fullUrl = "";
         
-        fullUrl = MainHost+virPath;
+        fullUrl = ResHost+virPath;
         
         return URL(string: fullUrl)!;
     }
